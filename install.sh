@@ -48,7 +48,7 @@ fonts(){
 	[ ! -d "$HOME/.local/share" ] && \
 		mkdir -p $HOME/.local/share
 	echo "Copying ~/.config/fontfonfig/ to ~/.config"
-	cp -r $HOME/dotfiles/fontfonfig \
+	cp -r $HOME/dotfiles/.config/fontconfig \
 		$HOME/.config/ && \
 		echo "Copying fonts to ~/.local/share..." && \
 		cp -r $HOME/dotfiles/.local/share/fonts \
