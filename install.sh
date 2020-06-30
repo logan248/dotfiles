@@ -47,9 +47,11 @@ install_required_libries(){
 fonts(){
 	[ ! -d "$HOME/.local/share" ] && \
 		mkdir -p $HOME/.local/share
-	echo "Copying ~/.config/fontfonfig/ to ~/.config"
+	echo "Copying ~/.config/fontconfig/ to ~/.config/fontconfig"
+	[ ! -d "$HOME/.config/fontconfig" ] && \
+		mkdir -p $HOME/.config/fontconfig
 	cp -r $HOME/dotfiles/.config/fontconfig \
-		$HOME/.config/ && \
+		$HOME/.config/fontconfig && \
 		echo "Copying fonts to ~/.local/share..." && \
 		cp -r $HOME/dotfiles/.local/share/fonts \
 		$HOME/.local/share/ && \
