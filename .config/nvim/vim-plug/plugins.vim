@@ -51,6 +51,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'NLKNguyen/papercolor-theme'
     Plug 'tomasiser/vim-code-dark'
     Plug 'dikiaap/minimalist'
+    Plug 'dracula/vim', { 'as': 'dracula' }
     " Intellisense
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     " Status Line
