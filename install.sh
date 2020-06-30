@@ -21,7 +21,8 @@ install_packages(){
 		ripgrep \
 		fzf \
 		ranger \
-		fontconfig-utils
+		fontconfig-utils \
+		rsync
 }
 
 clean_up(){
