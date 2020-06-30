@@ -110,7 +110,7 @@ set modelines=0
 set nomodeline
 
 " History
-set history=1000                        " Remember more commands
+"set history=1000                        " Remember more commands
 "if has('persistent_undo')
 "    set undofile                        " Persistent undo
 "    set undodir=~/.config/nvim/temp/undo " Location to store undo history
