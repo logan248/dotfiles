@@ -19,6 +19,7 @@ set clipboard=unnamedplus               " Copy paste between vim and everything 
 set nobackup                            " This is recommended by coc
 set noswapfile                          " Dont create swapfiles
 set nowritebackup                       " This is recommended by coc
+set noundofile                          " Don't create undofiles
 
 " File format
 set fileformats=unix,dos,mac
@@ -110,13 +111,18 @@ set modelines=0
 set nomodeline
 
 " History
-"set history=1000                        " Remember more commands
-"if has('persistent_undo')
-"    set undofile                        " Persistent undo
-"    set undodir=~/.config/nvim/temp/undo " Location to store undo history
-"    set undolevels=1000                 " Max number of changes
-"    set undoreload=10000                " Max lines to save for undo on a buffer reload
-"endif
+" set history=1000                        " Remember more commands
+
+" if !exists('$HOME/.vim/undo')           " Create undo directory if not available
+"    silent !mkdir -p ~/.vim/undo
+" endif
+
+" if has('persistent_undo')               " Check if your vim version supports it
+"     set noundofile                      " Turn on the feature ( Disabled !! )
+"     set undodir=$HOME/.vim/undo         " Directory where the undo files will be stored
+"     set undolevels=1000                 " Max number of changes
+"     set undoreload=10000                " Max lines to save for undo on a buffer reload
+" endif
 
 " Status lines
 set laststatus=2                        " Always display the status line
