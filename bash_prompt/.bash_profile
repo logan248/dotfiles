@@ -17,8 +17,12 @@ fi
     #alias vim="TERM=screen-256color vim"
 #fi
 
-# Set default editor to vim
-#export EDITOR=vim
+if [ -f "$HOME/.git-completion.bash" ]; then
+  source ~/.git-completion.bash
+fi
+
+# Set default editor to neovim
+export EDITOR=nvim
 
 # Load dotfiles
 for file in ~/.{bash_prompt,aliases}; do
