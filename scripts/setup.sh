@@ -45,7 +45,7 @@ verify_pip(){
 }
 
 others(){
-	cp ./.git-completion.bash ./.gitconfig ~/
+  cp ../.git-completion.bash ../.gitconfig ~/
 }
 
 bash_prompt
