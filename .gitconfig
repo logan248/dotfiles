@@ -1,0 +1,20 @@
+[user]
+    name = Logan Anderson
+    email = logananderson248@gmail.com
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+[color "status"]
+    added = green
+    changed = blue
+    untracked = red
+[color "diff"]
+    meta = yellow
+    old = red
+    new = green
+[core]
+    editor = nvim
+[push]
+    followTags = true
+    default = current
