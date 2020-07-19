@@ -1,25 +1,34 @@
 #!/usr/bin/bash
 
-
 # Navigations
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias cl="clear && ls -a"
+alias cp='cp -Rv'
+alias ls='ls --color=auto -ACF'
+alias ll='ls --color=auto -alF'
+alias grep='grep --color=auto'
+alias grepw='grep --color=auto -Hrnwi'
+alias mkdir='mkdir -pv'
+alias rm="rm -rfv"
+alias mv='mv -v'
 
-#Shortcuts
-alias p="cd /storage/sdcard0/Projects/"
-alias dl="cd /storage/sdcard0/Download/"
-alias t="cd /storage/sdcard0/Termux/"
-
-
-#Git 
-alias gs="git status"
-alias gi="git init"
-alias gc="git commit -m "
-alias ga="git add "
+#Git
+alias gstat="git status"
+alias gini="git init"
+alias gcom="git commit -m"
+alias gadd="git add"
+alias goto='git checkout'
 alias g.="git add ."
+
+# Youtube-dl
+alias yte="youtube-dl --external-downloader aria2c --external-downloader-args '-c -j 3 -x 3 -s 3 -k 1M'"
+alias yta="youtube-dl --extract-audio --audio-format mp3"
+
+# Aria2c
+alias ator="aria2c --seed-time=0"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
