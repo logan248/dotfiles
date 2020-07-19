@@ -58,8 +58,8 @@ pkg install clang \
   figlet \
   toilet
 
-if [ -f ./setup.sh ]; then
-  ./setup.sh
+if [ -f "$HOME/dotfiles/scripts/setup.sh" ]; then
+  $HOME/dotfiles/scripts/setup.sh
 fi
 
 clean_up
