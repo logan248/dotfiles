@@ -28,7 +28,8 @@ alias yte="youtube-dl --external-downloader aria2c --external-downloader-args '-
 alias yta="youtube-dl --extract-audio --audio-format mp3"
 
 # Aria2c
-alias ator="aria2c --seed-time=0"
+alias ariaf="aria2c --file-allocation=none"
+alias ator="aria2c --file-allocation=none --seed-time=0"
 
 # IP addresses
 alias ip="dig +short myip.opendns.com @resolver1.opendns.com"
