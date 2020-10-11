@@ -55,6 +55,7 @@ pkg install clang \
   cmus \
   vifm \
   mc \
+  nnn \
   figlet \
   toilet
 
