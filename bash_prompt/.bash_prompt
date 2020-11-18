@@ -167,7 +167,7 @@ prompt() {
     local title_bar='${title}'
     local virtualenv="\[${blue}\]\$(virtualenv_info)\[${reset}\] "
     local _git="\$(prompt_git)\[${reset}\]"
-    local user_host='\[${orange}\]Lemick \[${white}\]at \[${yellow}\]\h \[${white}\]in \[${reset}\]'
+    local user_host='\[${orange}\]\u \[${white}\]at \[${yellow}\]\h \[${white}\]in \[${reset}\]'
     local dir='\[${blue}\]\W \[${reset}\]'
     local prompt_char='\[${white}\]>_ \[${reset}\]'
 
