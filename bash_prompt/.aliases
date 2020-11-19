@@ -11,9 +11,9 @@ alias ls='ls --color=auto -ACF'
 alias ll='ls --color=auto -alF'
 alias grep='grep --color=auto'
 alias grepw='grep --color=auto -Hrnwi'
-alias mkdir='mkdir -pv'
-alias rm="rm -rfv"
-alias mv='mv -v'
+alias mkdir='mkdir -p'
+alias rm="rm -rf"
+alias mv='mv'
 
 #Git
 alias gstat="git status"
