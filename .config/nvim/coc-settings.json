@@ -42,8 +42,8 @@
   "python.linting.pylintEnabled": true,
   "python.pipenvPath": "~/neovim",
   "python.linting.pylintPath": "~/.local/share/virtualenvs/neovim-i8ekCz1N/bin/pylint",
-  "python.formatting.provider": "black",
-  "python.formatting.blackPath": "~/.local/share/virtualenvs/neovim-i8ekCz1N/bin/black",
+  "python.formatting.provider": "yapf",
+  "python.formatting.yapfPath": "~/.local/share/virtualenvs/neovim-i8ekCz1N/bin/yapf",
   "python.sortImports.path": "~/.local/share/virtualenvs/neovim-i8ekCz1N/bin/isort",
   "python.jediPath": "~/.local/share/virtualenvs/neovim-i8ekCz1N/lib/python3.8/site-packages",
   "python.jediEnabled": true,
@@ -64,7 +64,7 @@
   "explorer.icon.enableNerdfont": true,
   "explorer.previewAction.onHover": false,
   "explorer.icon.enableVimDevicons": false,
-  "explorer.keyMappings": {
+  "explorer.keyMappings.global": {
     "<cr>": ["expandable?", "expand", "open"],
     "v": "open:vsplit"
   },
