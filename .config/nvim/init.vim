@@ -34,7 +34,7 @@ source $HOME/.config/nvim/plug-config/floaterm.vim
 source $HOME/.config/nvim/plug-config/vista.vim
 
 " Experimental
-let g:polyglot_disabled = ['csv']
+" let g:polyglot_disabled = ['csv']
 
 " Python
 " https://realpython.com/python-debugging-pdb/ " breakpoint syntax is really cool
